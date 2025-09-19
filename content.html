@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Me</title>
+</head>
+<body>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: url(Cotton\ Candy.jpg);
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 100px;
+    }
+    .container {
+        background: white;
+        padding: 20px 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 320px;
+    }
+    .container h1{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .form-gp {
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        outline: black;
+        padding-left: 25px;
+        font-weight: 500;
+        color: black;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    textarea {
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        outline: black;
+        padding-left: 25px;
+        font-weight: 500;
+        color: black;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        resize: none;
+        height: 100px;
+    }
+    .submit-btn {
+        width: 100px;
+        background: #4CAF50;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .submit-btn:hover {
+        background: #45a049;
+    }
+    .back {
+        text-align: center;
+        margin: 10px;
+    }
+    .back a {
+        text-decoration: none;
+        color: black;
+    }
+    .btn-con{
+        text-align: center;
+    }
+    @media (max-width:480px) {
+        .container {
+        background: white;
+        padding: 20px 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 320px;
+        }
+    }
+    </style>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <h1>Content Me</h1>
+                <input type="hidden" name="access_key" value="0ab8791d-e2e9-4fd0-a9ae-b3900d8ada28">
+                <input type="text" name="name" placeholder="Name" class="form-gp" required>
+                <input type="email" name="email" placeholder="Email" class="form-gp" required>
+                <textarea name="message" placeholder="Write Your Message..." required></textarea>
+            <div class="btn-con">
+            <button type="submit" class="submit-btn">Submit</button>
+            </div>
+            <div class="back">
+                <a href="index.html">Go back!</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
